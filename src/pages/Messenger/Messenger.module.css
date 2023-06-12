@@ -1,0 +1,24 @@
+.messenger{
+    border: 1px solid white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100% 100%;
+    padding: 25px;
+    height: calc(100vh - 275px);
+}
+.messenger > section{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .messenger{
+        border: 1px solid white;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        padding: 25px;
+        height: calc(100vh - 275px);
+    }
+}

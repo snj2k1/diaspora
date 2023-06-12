@@ -1,0 +1,21 @@
+.signin{
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all ease-out .2s;
+}
+.signin:hover{
+    color: black;
+    background-color: white;
+    transition: all ease-in .2s;
+}
+.signup{
+    font-size: 24px;
+    margin-left: 25px;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+}

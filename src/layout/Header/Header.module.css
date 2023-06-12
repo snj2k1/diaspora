@@ -1,0 +1,67 @@
+.header{
+    height: 175px;
+}
+.header__inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 56px;
+    text-shadow: 0 0 0 #fff;
+    transition: text-shadow .5s ease-out;
+}
+.logo:hover{
+    text-shadow: 0 0 20px #fff;
+    transition: text-shadow .5s ease-in;
+}
+.header__profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.search_link,
+.messenger_link{
+    padding: 5px 10px;
+    border: 2px solid white;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+.messenger_link{
+    background-color: black;
+    background-image: url(../../img/message-white.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: center;
+    transition: all .25s ease-in;
+}
+.messenger_link:hover{
+    background-color: white;
+    background-image: url(../../img/message-black.svg);
+    transition: all .25s ease-in;
+}
+.search_link{
+    background-color: black;
+    background-image: url(../../img/search-white.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: center;
+    transition: all .25s ease-in;
+}
+.search_link:hover{
+    background-color: white;
+    background-image: url(../../img/search-black.svg);
+    transition: all .25s ease-in;
+}
+
+@media screen and (max-width: 992px) {
+    .header__inner{
+        flex-direction: column;
+        padding: 15px;
+    }
+}

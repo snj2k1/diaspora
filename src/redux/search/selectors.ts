@@ -1,0 +1,1 @@
+export const getSearchParams = (state) => state.search;

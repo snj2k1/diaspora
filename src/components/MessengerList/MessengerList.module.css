@@ -1,0 +1,44 @@
+.users{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,.2);
+}
+
+.usersList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 92%;
+    overflow: scroll;
+}
+.usersList::-webkit-scrollbar {
+    width: 3px; /* ширина для вертикального скролла */
+    height: 0; /* высота для горизонтального скролла */
+    border-radius: 10px;
+    background-color: black;
+}
+.usersList::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+.usersItem > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.usersItem{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.usersItem:hover{
+    background-color: rgba(255,255,255,.1);
+}
+.usersItem > div{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

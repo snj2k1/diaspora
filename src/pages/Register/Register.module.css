@@ -1,0 +1,55 @@
+.auth{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 30px auto;
+}
+.auth > label:not(:first-child){
+    margin-top: 25px;
+}
+.auth > input,
+.auth > select
+{
+    font-size: 20px;
+    height: 40px;
+    margin-top: 5px;
+    outline: none;
+    padding: 0 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.auth > input[type='submit']{
+    margin-top: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.auth > input[type='submit']:hover{
+    background-color: black;
+    color: white;
+    transition: all .3s ease-in;
+}
+.auth_question{
+    margin-top: 15px;
+    text-align: center;
+}
+.auth_question > a{
+    text-decoration: underline;
+}
+.auth_title{
+    text-align: center;
+    font-size: 36px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .auth{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .auth{
+        width: 100%;
+    }
+}

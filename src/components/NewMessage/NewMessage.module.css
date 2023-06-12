@@ -1,0 +1,71 @@
+.newMessage{
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+.newMessage > textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 10px 45px 10px 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.newMessage > textarea::-webkit-scrollbar{
+    width: 0;
+}
+.newMessage > button{
+    height: 100%;
+    outline: none;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all .4s ease-out;
+}
+.newMessage > button:hover{
+    background-color: white;
+    color: black;
+    transition: all .4s ease-in;
+}
+.img_label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.preview_photo{
+    display: flex;
+}
+.preview_photo > ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+.preview_photo > ul > li{
+    position: relative;
+}
+.preview_photo > ul > li > img{
+    width: 75px;
+    height: 75px;
+}
+.preview_photo > ul > li > span{
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+    right: 0;
+    font-size: 24px;
+    line-height: 20px;
+    padding: 0 5px;
+    cursor: pointer;
+}

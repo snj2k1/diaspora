@@ -1,0 +1,83 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.4);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.modal.active{
+    pointer-events: all;
+    opacity: 1;
+}
+.modal__close_btn{
+    position: absolute;
+    top: 0;
+    right: 2%;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+    transition: color .25s ease-out;
+}
+.modal__close_btn:hover{
+    color: rgba(255,255,255,.5);
+    transition: color .25s ease-in;
+}
+.modal__search_form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.8);
+    border: 1px solid white;
+    padding: 50px 50px;
+    width: 25%;
+    transform: scale(0.5);
+    transition: .4s all;
+    cursor: auto;
+}
+.modal__search_form.active{
+    transform: scale(1);
+    transition: .4s all;
+}
+.modal__search_form > h3{
+    margin-bottom: 25px;
+}
+.modal__search_form > label:not(:first-child){
+    margin-top: 25px;
+}
+.modal__search_form > label{
+    font-size: 20px;
+}
+.modal__search_form > input,
+.modal__search_form > select
+{
+    font-size: 20px;
+    height: 40px;
+    margin-top: 5px;
+    outline: none;
+    padding: 0 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.modal__search_form > input[type='submit']{
+    margin-top: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.modal__search_form > input[type='submit']:hover{
+    background-color: black;
+    color: white;
+    transition: all .3s ease-in;
+}

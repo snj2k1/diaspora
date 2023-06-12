@@ -1,0 +1,30 @@
+.posts__item{
+    margin-top: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.post_img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.post_header{
+    display: flex;
+    align-items: center;
+}
+.post_info{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.post_name{
+    font-weight: 700;
+    font-size: 18px;
+}
+.post_time{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.post_content{
+    margin-top: 15px;
+}

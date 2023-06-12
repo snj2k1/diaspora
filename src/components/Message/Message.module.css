@@ -1,0 +1,42 @@
+.messagesItem{
+    width: 100%;
+    display: flex;
+    overflow-wrap: break-word;
+    align-items: flex-start;
+    padding: 10px;
+}
+.messagesItem > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.messagesItem > div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 3px;
+    width: 95%;
+}
+.messageName{
+    font-weight: 700;
+}
+.date{
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgba(255,255,255,.4);
+    font-weight: 300;
+}
+.message_img{
+    max-width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+    .messagesItem{
+        padding: 0;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .message_img{
+        max-width: 200px;
+    }
+}

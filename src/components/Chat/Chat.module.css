@@ -1,0 +1,45 @@
+.chat{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    height: 100%;
+}
+.user > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.user > a > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.user > a > span {
+    margin-left: 10px;
+}
+.chat > .user{
+    padding-bottom: 15px;
+}
+.chooseText{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.delete{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .chooseText{
+        display: none;
+    }
+    .delete{
+        display: inline-block;   
+        position: absolute;
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 36px;;
+    }
+}

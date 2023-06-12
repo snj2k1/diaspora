@@ -1,0 +1,72 @@
+.form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.form_item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form_item:not(:first-child),
+.form_item > div > label:not(:first-child){
+    margin-left: 15px;
+}
+.form_item > label{
+    margin-bottom: 1px;
+}
+.form_item > input,
+.form_item > select,
+.form_item > div > input[type='number']
+{
+    font-size: 18px;
+    height: 30px;
+    margin-top: 5px;
+    outline: none;
+    padding: 0 2px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.form_item > div > input[type='number']{
+    margin-left: 5px;
+    width: 50px;
+}
+.form > input[type='submit']{
+    margin-left: 45px;
+    padding: 10px 40px;
+    background-color: black;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.form > input[type='submit']:hover{
+    background-color: white;
+    color: black;
+    transition: all .3s ease-in;
+}
+
+@media screen and (max-width: 1100px) {
+    .form{
+        flex-direction: column;
+    }
+    .form_item:not(:first-child){
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .form_item > div > input[type='number']{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .age{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form > input[type='submit']{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,30 @@
+.messages{
+    display: table-row;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.messagesList{
+    margin: 5px;
+    padding: 10px;
+    list-style-type: none;
+    height: 98%;
+    overflow: scroll;
+}
+.messagesList::-webkit-scrollbar {
+    width: 5px; /* ширина для вертикального скролла */
+    height: 0; /* высота для горизонтального скролла */
+    border-radius: 10px;
+    background-color: black;
+}
+.messagesList::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .messagesList{
+        margin: 0;
+        padding: 0;
+    }
+}

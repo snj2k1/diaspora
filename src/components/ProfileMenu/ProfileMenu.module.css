@@ -1,0 +1,56 @@
+.profile_menu{
+    position: relative;
+    display: inline-flex;
+    padding: 5px 10px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+}
+.profile_menu:hover{
+    background-color: rgba(255,255,255,0.3);
+    transition: background-color .2s ease-in;
+}
+.profile_menu__user_photo{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+.profile_menu__user_arrow{
+    margin-left: 10px;
+}
+.profile_menu__hidden{
+    position: absolute;
+    background-color: black;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 5px;
+    transform: scaleY(0);
+    transition: all .5s ease-in-out;
+}
+.profile_menu__hidden a,
+.profile_menu__hidden button
+{
+    font-family: 'Electrolize', sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+.profile_menu__hidden a:hover,
+.profile_menu__hidden button:hover{
+    background-color: rgba(255,255,255,0.3);
+    transition: background-color .2s ease-in;
+}

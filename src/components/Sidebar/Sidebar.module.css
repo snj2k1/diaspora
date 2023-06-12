@@ -1,0 +1,12 @@
+.sidebar{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 40px calc(100% - 90px);
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar_hidden{
+        display: none;
+    }
+}
